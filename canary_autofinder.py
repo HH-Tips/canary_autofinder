@@ -38,6 +38,6 @@ print("Possibili Canaries:")
 print("OFFSET\tLAST_VALUE")
 for key in possible_canary.keys():
     if possible_canary[key]:
-        print(f"{hex(key*word)}:\t{last_values[key]}")
+        print(f"{key+1}:\t{last_values[key]}")
 
 p.close()
